@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #9a6c53;
+    width: 100%;
+    height: 100vh;
+}
+.label{
+    width: 30px;
+    height: 5px;
+    background-color: #111;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+    border-radius: 50px;
+    margin-top: 3%;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.far fa-moon{
+    color: rgb(0, 124, 27);
+}
+
+.far fa-sun{
+    color: #f39c12;
+}
+
+.ball{
+    overflow: hidden;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    top: 20%;
+    left: 10px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(20px);
+
+}
+
+body.dark{
+    background:#0d1117 ;
+}
+body.dark p{
+    color: #9a6c53;
+}
+body.dark h1{
+    color: #9a6c53;
+}
+body.dark h2{
+    color: #9a6c53;
+}
+body.left.dark{
+    border: solid 1px white;
+    margin: 20px 10%;
+    max-width: 400px; 
+}
+body.left.dark img{
+    background-image: url(/car.jpg);
+}
+.Left{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 600px;
+}
+
+.left h1{
+    font-family: 'Zen dots',sans-serif;
+    color: #0d1117;
+    font-size: 500;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+.left h2{
+    font-family: 'Zen dots',sans-serif;
+    color: #0d1117;
+    font-size: 500;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin: 20px 10%;
+}
+.left p {
+    font-family: 'Zen dots',sans-serif;
+    color: #0d1117;
+    font-size: 400;
+    margin: 5px 10%;
+}
+.left img{
+    width: 100px;
+    height: 100px;
+    margin: 20px 10%;
+    cursor: pointer;
+}
+.left img:hover{
+    transform: scale(1.7);
+    transition: transform linear 0.4s ;
+}
+.left p:hover{
+    transform: translateX(20px);
+    transition: transform linear 0.4s ;
+}
+.left h2:hover{
+    transform: translateY(-20px);
+    transition: transform linear 0.4s;
+}
+.left h1:hover{
+    transform: translateX(20px);
+    transition: transform linear 0.4s;
+    transition-delay: 5ms;
+}
+.left{
+    border: solid 2px #ac613f;
+    margin: 20px 10%;
+    max-width: 400px;
+}
+
+.right img{
+    float: right;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px 10%;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    margin-top: -30%;
+}
+.right img:hover{
+    transform: scale(1.3);
+    transition: transform 0.4s ease-in-out;
+}
